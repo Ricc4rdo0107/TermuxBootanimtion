@@ -76,6 +76,7 @@ except Exception as e:
     print(f"{bcolors.FAIL}Something shitty happened over here:\n{e}{bcolors.ENDC}")
 
 print(f"\n{bcolors.WARNING}Tryng to play bootanimation...{bcolors.ENDC}")
+sleep(2)
 os.system("bootanimation")
-print(f"{bcolors.OKGREEN}Done\n")
+print(f"{bcolors.OKGREEN}Done!\n")
 exit()
