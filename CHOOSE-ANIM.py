@@ -74,3 +74,8 @@ try:
     os.system(f"sudo cp ANIMATIONS/{ach} {folder}system/media/bootanimation.zip")
 except Exception as e:
     print(f"{bcolors.FAIL}Something shitty happened over here:\n{e}{bcolors.ENDC}")
+
+print(f"\n{bcolors.WARNING}Tryng to play bootanimation...{bcolors.ENDC}")
+os.system("bootanimation")
+print(f"{bcolors.OKGREEN}Done\n")
+exit()
