@@ -4,6 +4,7 @@ import subprocess as sb
 
 
 #shit
+TBA="/data/adb/modules/TBA"
 fpath = os.path.dirname(os.path.realpath(__file__))
 c=0
 
@@ -60,10 +61,12 @@ else:
 print(f"\n{bcolors.OKBLUE}You choose {bcolors.UNDERLINE}{ach}{bcolors.ENDC}")
 print(f"{bcolors.OKBLUE}Searching for magisk module folder...")
 
-tmpcmd=sb.run("find /dev -type f -name sign_81818thisfileisafile.txt", shell=True, stdout=sb.PIPE, encoding="utf-8").stdout
-folder=tmpcmd.split("\n")[0].replace("sign_81818thisfileisafile.txt","") #Is like my flag sign_81818thisfileisafile.txt
+#tmpcmd=sb.run("find /dev -type f -name sign_81818thisfileisafile.txt", shell=True, stdout=sb.PIPE, encoding="utf-8").stdout
+#folder=tmpcmd.split("\n")[0].replace("sign_81818thisfileisafile.txt","") #Is like my flag sign_81818thisfileisafile.txt
 
-if folder=="":
+folder = os.path.exists(TBA)
+
+if not(folder):
     print(f"\n{bcolors.FAIL}Magisk module not found, please install it from magisk manager.{bcolors.ENDC}")
     exit()
 else:
