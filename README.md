@@ -7,7 +7,7 @@ Installing custom bootanimations by termux, I put the nethunter animations as de
 All nethunter bootanimations:
 <code>https://gitlab.com/kalilinux/nethunter/apps/kali-nethunter-bootanimation</code>
 
-You caninstall the module doing
+You can install the module doing
 <code>tsu</code>
 <code>magisk --install-module "Termux Boot Animation.zip"</code>
 
