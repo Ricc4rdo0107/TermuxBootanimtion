@@ -1,4 +1,4 @@
-Soon I will post a better script (I didn't)
+I abandoned this project a long time ago
 
 
 # TermuxBootanimtion
