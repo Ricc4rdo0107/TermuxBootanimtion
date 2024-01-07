@@ -1,4 +1,4 @@
-Soon I will post a better script (jk)
+Soon I will post a better script (I didn't)
 
 
 # TermuxBootanimtion
